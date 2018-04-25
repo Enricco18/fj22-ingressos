@@ -77,6 +77,7 @@ public class SalaController {
 
         ModelAndView view = new ModelAndView("sessao/lista");
         view.addObject("sala", sala);
+        view.addObject("sessoes",sessaoDao.buscaSessoesDaSala(sala));
 
         return view;
     }
@@ -88,8 +89,7 @@ public class SalaController {
 
         Sala sala = salaDao.findOne(id);
         modelAndView.addObject("sala", sala);
-        modelAndView.addObject("sessoes",sessaoDao.buscaSessoesDaSala(sala));
-
+        
         return modelAndView;
     }
 
