@@ -5,13 +5,13 @@ import java.time.LocalTime;
 import java.util.Arrays;
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import br.com.caelum.ingresso.model.Filme;
 import br.com.caelum.ingresso.model.Sala;
 import br.com.caelum.ingresso.model.Sessao;
-import junit.framework.Assert;
 
 public class GerenciadorDeSessaoTest {
 	private Filme rogueone;
@@ -26,7 +26,7 @@ public class GerenciadorDeSessaoTest {
 		this.sala3D = new Sala("Sala 3D");
 		
 		this.sessaoDasDez= new Sessao(LocalTime.parse("10:00:00"),rogueone,sala3D);
-		this.sessaoDasTreze= new Sessao(LocalTime.parse("103:00:00"),rogueone,sala3D);
+		this.sessaoDasTreze= new Sessao(LocalTime.parse("13:00:00"),rogueone,sala3D);
 		this.sessaoDasDezoito= new Sessao(LocalTime.parse("18:00:00"),rogueone,sala3D);
 	}
 	@Test
