@@ -6,5 +6,8 @@ public class SemDesconto implements Desconto{
 	public BigDecimal aplicarDescontoSobre(BigDecimal preco){
 		return preco;
 	}
+    public String getDescricao(){
+   	 return "Normal";
+   }
 
 }

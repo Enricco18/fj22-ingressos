@@ -30,7 +30,7 @@ public class Lugar {
     }
 
     public Lugar(String apelido, Integer posicao) {
-        this.fileira = apelido;
+        this.fileira = apelido.toUpperCase();
         this.posicao = posicao;
     }
 
